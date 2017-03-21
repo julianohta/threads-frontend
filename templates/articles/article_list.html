@@ -1,0 +1,20 @@
+{% if articles_list %}
+    <ul>
+    {% for article in articles_list %}
+        <li><a href="/pub/{{ article.slug }}/">{{ article }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="{% url 'article-list' page=page_obj.previous_page_number %}">previous</a>
+        {% endif %}
+
+        {% if page_obj.has_next %}
+            <a href="{% url 'article-list' page=page_obj.next_page_number %}">next</a>
+        {% endif %}
+    </span>
+</div>
