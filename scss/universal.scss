@@ -37,16 +37,45 @@ main {
 }
 
 .slideshow {
+    overflow: hidden;
     width: 100%;
-    max-width: 1000px;
-    height: 500px;
-    background-color: black;
-    margin-top: 16px;
-    margin-bottom: 16px;
+
+    &__slide-container {
+
+        list-style: none;
+        position: relative;
+        width: 700%;
+        overflow: hidden;
+
+        -moz-animation:slideshow 30s infinite;
+        -webkit-animation:slideshow 30s infinite;
+        animation:slideshow 30s infinite;
+    }
 
     &__slide {
+        position: relative;
+        float: left;
 
+        display: block;
+        width: 14.28%;
+        max-width: 14.28%;
     }
+}
+
+@keyframes slideshow {
+    0% { left: 0; }
+    13.66% { left: 0; }
+    16.66% { left: -100%; }
+    30.33% { left: -100%; }
+    33.33% { left: -200%; }
+    47% { left: -200%; }
+    50% { left: -300%; }
+    63.66% { left: -300%; }
+    66.66% { left: -400%; }
+    80.33% { left: -400%; }
+    83.33% { left: -500%; }
+    97% { left: -500%; }
+    100% { left: -600%; }
 }
 
 .nav {
@@ -58,6 +87,14 @@ main {
 
     &__item {
         margin-left: 24px;
+
+        transition: color .15s ease-in-out;
+        -moz-transition: color .15s ease-in-out;
+        -webkit-transition: color .15s ease-in-out;
+
+        &:hover {
+            color: black;
+        }
     }
 }
 
@@ -109,9 +146,9 @@ h1 {
 
 .white-circle {
 
-    transition: background-color .25s ease-in-out;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    -moz-transition: background-color .15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out;
 
     transform: translate(0,0); /* This shouldn't work, css is super buggy */
     height: 30px;
@@ -134,6 +171,8 @@ h1 {
     height: 18px;
     width: 18px;
 }
+
+
 
 h1 {
     font-size: 1em;

@@ -3,9 +3,16 @@
 {% load static %}
 
 {% block content %}
-<img class="slideshow" href="{% static 'media/snowface.jpg' %}">
-
-</img>
+<div class="slideshow">
+    <div class="slideshow__slide-container">
+        <img class="slideshow__slide" src="{% static 'media/images/1.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/2.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/3.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/4.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/5.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/6.jpg' %}"></img>
+        <img class="slideshow__slide" src="{% static 'media/images/1.jpg' %}"></img>
+    </div>
 <h1>
     OUR VALUES
 </h1>
