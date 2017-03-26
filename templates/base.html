@@ -7,9 +7,11 @@
 </head>
 <body>
     <header>
-        <img class="header__title" src="{% static 'media/logo.png' %}">
+        <a href="{% url 'home' %}">
+            <img class="header__title" src="{% static 'media/logo.png' %}">
+        </a>
         <div class="nav">
-            <a class="nav__item" href="pub">
+            <a class="nav__item" href="{% url 'pub:article-list' page=1 %}">
                 Articles
             </a>
             <div class="nav__item">

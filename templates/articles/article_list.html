@@ -5,7 +5,10 @@
     {% if articles_list %}
         <ul>
         {% for article in articles_list %}
-            <li><a href="/pub/{{ article.slug }}/">{{ article }}</a></li>
+            <div class="">
+
+            <a href="/pub/{{ article.slug }}/">{{ article }}</a>
+            </div>
         {% endfor %}
         </ul>
     {% else %}

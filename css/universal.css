@@ -8,7 +8,7 @@ a:link, a:visited, a:hover, a:active {
   color: inherit; }
 
 header {
-  padding: 2em;
+  padding: 32px;
   text-align: center;
   width: 100%;
   max-width: 1000px;
@@ -26,15 +26,16 @@ main {
   max-width: 1000px;
   font-size: 1.5em;
   margin: auto;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-bottom: 100px; }
 
 .slideshow {
   overflow: hidden;
   width: 100%; }
   .slideshow__slide-container {
-    list-style: none;
     position: relative;
     width: 700%;
     overflow: hidden;
@@ -111,7 +112,7 @@ footer {
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  padding-top: 1em;
+  padding-top: 22px;
   font-size: 1.5em; }
   footer:before {
     display: block;
