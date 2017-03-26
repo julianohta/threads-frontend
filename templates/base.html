@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+</head>
+<body>
+    <header>
+        <img class="header__title" src="{% static 'media/logo.png' %}">
+        <div class="nav">
+            <div class="nav__item">
+                Articles
+            </div>
+            <div class="nav__item">
+                Media
+            </div>
+            <div class="nav__item">
+                Publication
+            </div>
+            <div class="nav__item">
+                About
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a class="white-circle" onclick="window.open('https://www.instagram.com/threadmag/')">
+                <img class="media-icon" src="{% static 'media/icons/Instagram-50.png' %}">
+            </a>
+            <a class="white-circle" onclick="window.open('https://www.facebook.com/theThreadMagazine/')">
+                <img class="media-icon" src="{% static 'media/icons/Facebook-50.png' %}">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

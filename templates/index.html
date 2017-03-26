@@ -10,6 +10,7 @@
         <video autoplay loop muted class="fullscreen-background__video">
             <source src="{% static 'media/promo.mp4' %}" type="video/mp4">
         </video>
+
         <div class="fullscreen-background__container">
             <div class="fullscreen-background__title">
                 THREAD
@@ -17,20 +18,18 @@
             <div class="fullscreen-background__snippet">
                 Fashion. Lifestyle. Art.
             </div>
-            <div class="fullscreen-background__button">
+            <a class="fullscreen-background__button" href="home">
                 Enter
-            </div>
-
-
+            </a>
         </div>
 
         <div class="social-media">
-            <div class="white-circle">
+            <a class="white-circle" onclick="window.open('https://www.instagram.com/threadmag/')">
                 <img class="media-icon" src="{% static 'media/icons/Instagram-50.png' %}">
-            </div>
-            <div class="white-circle">
+            </a>
+            <a class="white-circle" onclick="window.open('https://www.facebook.com/theThreadMagazine/')">
                 <img class="media-icon" src="{% static 'media/icons/Facebook-50.png' %}">
-            </div>
+            </a>
         </div>
     </div>
 </body>

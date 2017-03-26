@@ -6,14 +6,42 @@
 header {
   padding: 2em;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  height: 100px; }
+
+.header__title {
+  float: left;
+  width: 70%;
+  max-width: 234px;
+  height: auto; }
 
 main {
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   font-size: 1.5em;
   margin: auto;
-  padding: 2em; }
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 100px; }
+
+.slideshow {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  background-color: black;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.nav {
+  margin-top: 12px;
+  float: right;
+  display: flex;
+  font-size: 18px;
+  color: #999; }
+  .nav__item {
+    margin-left: 24px; }
 
 video-background {
   background: #000;
@@ -33,20 +61,65 @@ video-background {
   pointer-events: none; }
 
 footer {
-  position: absolute;
-  height: 200px;
-  background-color: black;
-  color: white;
+  height: 100px;
   width: 100%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 700px;
+  max-width: 1000px;
   margin: auto;
-  padding: 2em;
+  padding-top: 1em;
   font-size: 1.5em; }
+  footer:before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #999; }
 
 h1 {
   font-size: 2em; }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.white-circle {
+  transition: background-color .25s ease-in-out;
+  -moz-transition: background-color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out;
+  transform: translate(0, 0);
+  /* This shouldn't work, css is super buggy */
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 4px; }
+  .white-circle:hover {
+    background-color: rgba(200, 200, 200, 0.3); }
+
+.media-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 18px;
+  width: 18px; }
+
+h1 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+
+h2 {
+  font-size: .9em;
+  font-weight: 200;
+  margin-top: 12px;
+  margin-bottom: 12px; }
+
+p {
+  font-size: .7em;
+  font-weight: 100;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #777; }
 
 /*# sourceMappingURL=universal.css.map */

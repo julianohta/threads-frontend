@@ -2,6 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 .fullscreen-background {
@@ -88,13 +94,21 @@
 
 .white-circle {
 
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+
     transform: translate(0,0); /* This shouldn't work, css is super buggy */
-    background-color: white;
     height: 30px;
     width: 30px;
     border-radius: 15px;
     margin: 4px;
 
+    background-color: rgba(255,255,255,.8);
+
+    &:hover {
+        background-color: rgba(200,200,200,.3);
+    }
 }
 
 .media-icon {

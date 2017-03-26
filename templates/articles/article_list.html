@@ -1,41 +1,26 @@
-<!DOCTYPE HTML>
+{% extends 'base.html' %}
 
-{% load static %}
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Threads!</h1>
-    </header>
+{% block content %}
 
-    <main>
-        {% if articles_list %}
-            <ul>
-            {% for article in articles_list %}
-                <li><a href="/pub/{{ article.slug }}/">{{ article }}</a></li>
-            {% endfor %}
-            </ul>
-        {% else %}
-            <p>No articles are available.</p>
-        {% endif %}
-        <div class="pagination">
-            <span class="step-links">
-                {% if page_obj.has_previous %}
-                    <a href="{% url 'article-list' page=page_obj.previous_page_number %}">previous</a>
-                {% endif %}
+    {% if articles_list %}
+        <ul>
+        {% for article in articles_list %}
+            <li><a href="/pub/{{ article.slug }}/">{{ article }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No articles are available.</p>
+    {% endif %}
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="{% url 'article-list' page=page_obj.previous_page_number %}">previous</a>
+            {% endif %}
 
-                {% if page_obj.has_next %}
-                    <a href="{% url 'article-list' page=page_obj.next_page_number %}">next</a>
-                {% endif %}
-            </span>
-        </div>
-    </main>
+            {% if page_obj.has_next %}
+                <a href="{% url 'article-list' page=page_obj.next_page_number %}">next</a>
+            {% endif %}
+        </span>
+    </div>
 
-    <footer>
-        This is at the bottom of every page and I don't know why;
-    </footer>
-
-</body>
-</html>
+{% endblock %}
