@@ -45,8 +45,8 @@ main {
     position: relative;
     float: left;
     display: block;
-    width: 14.28%;
-    max-width: 14.28%; }
+    width: 14.285714%;
+    max-width: 14.285714%; }
 
 @keyframes slideshow {
   0% {
