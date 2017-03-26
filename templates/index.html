@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/splash.css' %}"></link>
+</head>
+<body>
+    <div class="fullscreen-background">
+        <video autoplay loop muted class="fullscreen-background__video">
+            <source src="{% static 'media/promo.mp4' %}" type="video/mp4">
+        </video>
+        <div class="fullscreen-background__container">
+            <div class="fullscreen-background__title">
+                THREAD
+            </div>
+            <div class="fullscreen-background__snippet">
+                Fashion. Lifestyle. Art.
+            </div>
+            <div class="fullscreen-background__button">
+                Enter
+            </div>
+
+
+        </div>
+
+        <div class="social-media">
+            <div class="white-circle">
+                <img class="media-icon" src="{% static 'media/icons/Instagram-50.png' %}">
+            </div>
+            <div class="white-circle">
+                <img class="media-icon" src="{% static 'media/icons/Facebook-50.png' %}">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

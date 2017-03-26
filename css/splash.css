@@ -1,0 +1,94 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background-color: black;
+  color: #fff;
+  text-align: center; }
+  .fullscreen-background__video {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .fullscreen-background__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em; }
+  .fullscreen-background__title {
+    font-family: "aw-conqueror-didot";
+    font-size: 110px;
+    font-weight: 300;
+    letter-spacing: -.01em;
+    line-height: 1em;
+    margin-bottom: 16px; }
+  .fullscreen-background__snippet {
+    font-family: "futura-pt";
+    font-weight: 400;
+    line-height: 1.4em;
+    letter-spacing: .04em;
+    margin-bottom: 36px; }
+  .fullscreen-background__button {
+    font-family: "futura-pt";
+    font-weight: 500;
+    letter-spacing: .2em;
+    font-style: normal;
+    border: 2.5px solid white;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color .25s, color .25s, ease-in-out;
+    -moz-transition: background-color .25s, color .25s, ease-in-out;
+    -webkit-transition: background-color .25s, color .25s, ease-in-out; }
+    .fullscreen-background__button:hover {
+      color: black;
+      background-color: white; }
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  width: 100%; }
+
+.white-circle {
+  transform: translate(0, 0);
+  /* This shouldn't work, css is super buggy */
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin: 4px; }
+
+.media-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 18px;
+  width: 18px; }
+
+/* scale horizontally when aspect ratio greater than 16:9 */
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-background__video {
+    width: 100%;
+    height: auto; } }
+/* scale vertically when aspect ration less than 16:9 */
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-background__video {
+    width: auto;
+    height: 100%; } }
+
+/*# sourceMappingURL=splash.css.map */

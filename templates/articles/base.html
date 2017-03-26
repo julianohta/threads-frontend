@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Threads!</h1>
+    </header>
+
+    <main>
+
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        This is at the bottom of every page and I don't know why;
+    </footer>
+
+</body>
+</html>
