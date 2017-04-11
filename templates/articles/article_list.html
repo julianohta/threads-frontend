@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
     {% if articles_list %}
         <ul>
         {% for article in articles_list %}
-            <div class="">
-
-            <a href="/pub/{{ article.slug }}/">{{ article }}</a>
-            </div>
+            <img src="{% static 'media/article.jpg' %}" height="200" width="200"></img>
+                <h1><span><a href="/pub/{{ article.slug }}/">{{ article }}</a></span></h1>
         {% endfor %}
         </ul>
     {% else %}

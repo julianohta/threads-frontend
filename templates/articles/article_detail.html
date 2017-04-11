@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {{ article.title }}
-    {{ article.author }}
-    {{ article.date }}
-    {{ article.body }}
+    <h1>{{ article.title }}</h1>
+    <h2>{{ article.author }}</h2>
+    <h2>{{ article.date }}</h2>
+    <p>{{ article.body }}</p>
     <a href="{{ request.META.HTTP_REFERER }}">BACK</a>
 {% endblock %}

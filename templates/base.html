@@ -10,6 +10,15 @@
         <a href="{% url 'home' %}">
             <img class="header__title" src="{% static 'media/logo.png' %}">
         </a>
+        <div class="hamburger">
+            <input type="checkbox" class="toggle">
+            <div class="hamburger__nav">
+                <div class="hamburger__nav-item"></div>
+                <div class="hamburger__nav-item"></div>
+                <div class="hamburger__nav-item"></div>
+            </div>
+        </div>
+
         <div class="nav">
             <a class="nav__item" href="{% url 'pub:article-list' page=1 %}">
                 Articles
@@ -20,6 +29,9 @@
             <div class="nav__item">
                 Publication
             </div>
+            <a class="nav__item" href="{% url 'home' %}">
+                Home
+            </a>
             <div class="nav__item">
                 About
             </div>
@@ -27,9 +39,9 @@
     </header>
 
     <main>
-        {% block content %}
+    {% block content %}
 
-        {% endblock %}
+    {% endblock %}
     </main>
 
     <footer>
