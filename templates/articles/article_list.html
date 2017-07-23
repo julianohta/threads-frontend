@@ -2,13 +2,23 @@
 
 {% load static %}
 
-{% block content %}
+{% block content %}<div class="blog">
 
     {% if articles_list %}
         <ul>
         {% for article in articles_list %}
-            <img src="{% static 'media/article.jpg' %}" height="200" width="200"></img>
-                <h1><span><a href="/pub/{{ article.slug }}/">{{ article }}</a></span></h1>
+            <a href="{% url 'pub:article-detail' article.slug %}">
+                <div class="blog__item">
+                    <div class="blog__img" style="background-image: url('/media/{{ article.img }}')">
+                    </div>
+                    <div class="blog__title">
+                        {{ article.title }}
+                    </div>
+                    <div class="blog__info">
+                        {{ article.tag }}
+                    </div>
+                </div>
+            </a>
         {% endfor %}
         </ul>
     {% else %}
@@ -26,4 +36,4 @@
         </span>
     </div>
 
-{% endblock %}
+</div>{% endblock %}

@@ -1,36 +1,82 @@
-<!DOCTYPE HTML>
+{% extends "base.html" %}
 
 {% load static %}
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'css/splash.css' %}"></link>
-</head>
-<body>
+
+{% block content %}
     <div class="fullscreen-background">
         <video autoplay loop muted class="fullscreen-background__video">
             <source src="{% static 'media/promo.mp4' %}" type="video/mp4">
         </video>
+        <div class="fullscreen-background__overlay">
+
+        </div>
 
         <div class="fullscreen-background__container">
             <div class="fullscreen-background__title">
-                THREAD
+                The
+                <br>
+                Thread
+                <br>
+                Magazine
             </div>
             <div class="fullscreen-background__snippet">
-                Fashion. Lifestyle. Art.
+                Fashion for everyone.
+                <br>
+                Design with purpose.
             </div>
-            <a class="fullscreen-background__button" href="home">
-                Enter
-            </a>
-        </div>
-
-        <div class="social-media">
-            <a class="white-circle" onclick="window.open('https://www.instagram.com/threadmag/')">
-                <img class="media-icon" src="{% static 'media/icons/Instagram-50.png' %}">
-            </a>
-            <a class="white-circle" onclick="window.open('https://www.facebook.com/theThreadMagazine/')">
-                <img class="media-icon" src="{% static 'media/icons/Facebook-50.png' %}">
-            </a>
+            <div class="social-media">
+                <a href="http://www.instagram.com">
+                    <div class="social-media__icon social-media__icon--red">gram placeholder</div>
+                </a>
+                <a href="http://www.facebook.com">
+                    <div class="social-media__icon social-media__icon--blue">fb placeholder</div>
+                </a>
+            </div>
         </div>
     </div>
-</body>
-</html>
+    <div class="featured">
+        {% if featured %}
+            {% for article in featured %}
+            <a href="{% url 'pub:article-detail' article.slug %}">
+            <div class="featured__item">
+                <div class="featured__img" style="background-image: url('media/{{ article.img }}')">
+                </div>
+                <div class="featured__title">
+                    {{ article.title }}
+                </div>
+                <div class="featured__info">
+                    {{ article.tag }}
+                </div>
+            </div>
+            </a>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="about">
+        <div class="about__container">
+            <div class="about__section">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed luctus libero ac convallis fermentum. Quisque lacinia
+                ac eros convallis condimentum. Donec semper sapien et tortor
+                cursus sagittis. In bibendum tincidunt mattis. Nam vitae
+                lectus porttitor nunc elementum blandit ut in ante. Phasellus
+                eget dui sollicitudin, faucibus libero in, maximus felis.
+            </div>
+            <div class="about__img"></div>
+        </div>
+        <div class="about__container">
+            <div class="about__img"></div>
+            <div class="about__section">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed luctus libero ac convallis fermentum. Quisque lacinia
+                ac eros convallis condimentum. Donec semper sapien et tortor
+                cursus sagittis. In bibendum tincidunt mattis. Nam vitae
+                lectus porttitor nunc elementum blandit ut in ante. Phasellus
+                eget dui sollicitudin, faucibus libero in, maximus felis.
+            </div>
+        </div>
+    </div>
+    <div>
+        Join us!
+    </div>
+{% endblock %}

@@ -9,7 +9,7 @@ a:link, a:visited, a:hover, a:active {
   color: inherit; }
 
 .fullscreen-background {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;

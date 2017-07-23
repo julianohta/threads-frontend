@@ -3,57 +3,20 @@
 {% load static %}
 <html>
 <head>
-    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}"></link>
 </head>
 <body>
-    <header>
-        <a href="{% url 'home' %}">
-            <img class="header__title" src="{% static 'media/logo.png' %}">
-        </a>
-        <div class="hamburger">
-            <input type="checkbox" class="toggle">
-            <div class="hamburger__nav">
-                <div class="hamburger__nav-item"></div>
-                <div class="hamburger__nav-item"></div>
-                <div class="hamburger__nav-item"></div>
-            </div>
-        </div>
-
-        <div class="nav">
-            <a class="nav__item" href="{% url 'pub:article-list' page=1 %}">
-                Articles
-            </a>
-            <div class="nav__item">
-                Media
-            </div>
-            <div class="nav__item">
-                Publication
-            </div>
-            <a class="nav__item" href="{% url 'home' %}">
-                Home
-            </a>
-            <div class="nav__item">
-                About
-            </div>
-        </div>
-    </header>
+    <div class="nav">
+        <div class="nav__item"><a href="{% url 'home' %}">Home</a></div>
+        <div class="nav__item"><a href="{% url 'pub:article-list' %}">Blog</a></div>
+        <div class="nav__item"><a href="{% url 'photography' %}">Photography</a></div>
+        <div class="nav__item">About</div>
+    </div>
 
     <main>
     {% block content %}
 
     {% endblock %}
     </main>
-
-    <footer>
-        <div class="social-media">
-            <a class="white-circle" onclick="window.open('https://www.instagram.com/threadmag/')">
-                <img class="media-icon" src="{% static 'media/icons/Instagram-50.png' %}">
-            </a>
-            <a class="white-circle" onclick="window.open('https://www.facebook.com/theThreadMagazine/')">
-                <img class="media-icon" src="{% static 'media/icons/Facebook-50.png' %}">
-            </a>
-        </div>
-    </footer>
-
 </body>
 </html>

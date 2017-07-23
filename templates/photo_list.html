@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}<div class="photogrid">
+    {% if photos %}
+        {% for photo in photos %}
+            <div class="photogrid__container">
+                <div class="photogrid__photo" style="background-image: url('/media/{{ photo.image }}');"></div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>{% endblock %}

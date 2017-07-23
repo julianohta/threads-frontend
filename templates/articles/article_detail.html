@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{% block content %}<div class="blog">
     <h1>{{ article.title }}</h1>
     <h2>{{ article.author }}</h2>
     <h2>{{ article.date }}</h2>
     {{ article.body|safe }}
     <a href="{{ request.META.HTTP_REFERER }}">BACK</a>
-{% endblock %}
+</div>{% endblock %}
