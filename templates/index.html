@@ -33,6 +33,7 @@
     <div class="featured">
         {% if featured %}
             <div class="featured__item--half">
+                {% if featured.0 %}
                 <div class="featured__item featured__item--whole">
 
                     <a href="{% url 'pub:article-detail' featured.0.slug %}">
@@ -49,6 +50,8 @@
                         -->
                     </a>
                 </div>
+                {% endif %}
+                {% if featured.1 %}
                 <div class="featured__item featured__item--half">
 
                     <a href="{% url 'pub:article-detail' featured.1.slug %}">
@@ -65,6 +68,8 @@
                         -->
                     </a>
                 </div>
+                {% endif %}
+                {% if featured.2 %}
                 <div class="featured__item featured__item--half">
 
                     <a href="{% url 'pub:article-detail' featured.2.slug %}">
@@ -81,6 +86,15 @@
                         -->
                     </a>
                 </div>
+                {% endif %}
+            </div>
+            <div class="right featured__item--half">
+                <a href="https://issuu.com/thethreadmagazine/docs/threadss17_finalpresentation" target="_blank">
+                    <div class="featured__item featured__item--whole">
+                        <div class="featured__magazine" style="background-image: url('{% static 'img/magazine.png' %}');">
+                        </div>
+                    </div>
+                </a>
             </div>
         {% endif %}
     </div>
@@ -121,8 +135,5 @@
                 eget dui sollicitudin, faucibus libero in, maximus felis.
             </div>
         </div>
-    </div>
-    <div>
-        Join us!
     </div>
 {% endblock %}
