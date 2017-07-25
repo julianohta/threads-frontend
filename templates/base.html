@@ -7,10 +7,15 @@
 </head>
 <body>
     <div class="nav">
-        <div class="nav__item"><a href="{% url 'home' %}">Home</a></div>
-        <div class="nav__item"><a href="{% url 'pub:article-list' %}">Blog</a></div>
-        <div class="nav__item"><a href="{% url 'photography' %}">Photography</a></div>
-        <div class="nav__item">About</div>
+        <div class="nav__container">
+            <div class="nav__item--left nav__item">The Thread Magazine</div>
+        </div>
+        <div class="nav__container">
+            <div class="nav__item--right nav__item"><a href="{% url 'home' %}">Home</a></div>
+            <div class="nav__item--right nav__item"><a href="{% url 'pub:article-list' %}">Blog</a></div>
+            <div class="nav__item--right nav__item"><a href="{% url 'photography' %}">Photography</a></div>
+            <div class="nav__item--right nav__item">About</div>
+        </div>
     </div>
 
     <main>

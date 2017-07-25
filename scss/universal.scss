@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #f5f5f5;
+}
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
@@ -80,25 +84,23 @@ a:link, a:visited, a:hover, a:active {
 .featured {
     margin-top: 700px;
     width: 100%;
-    background-color: #101010;
-    padding: 32px;
+    padding: 24px;
 
     &__item {
         display: inline-block;
         width: 25%;
-        padding: 32px;
-        color: white;
+        padding: 24px;
         float: left;
     }
 
     &__title {
-        font-size: 32px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 4px;
     }
     &__info {
         margin-top: 8px;
-        font-size: 22px;
+        font-size: 16px;
     }
 
     &__img {
@@ -125,19 +127,35 @@ p {
 }
 
 .nav {
+    background-color: inherit;
     visibility: visible;
 
-    display: flex;
-    font-size: 32px;
+    font-size: 18px;
+    padding: 18px;
 
-    color: #999;
+    color: black;
     position: fixed;
 
-    top: 64px;
-    right: 64px;
+    top: 0;
+    width: 100%;
+
+    &__icon {
+        height: 58px;
+        width: 58px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        margin-left: 48px;
+    }
+
+    &__container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
     &__item {
-        margin-left: 24px;
+        float: right;
 
         transition: color .15s ease-in-out;
         -moz-transition: color .15s ease-in-out;
@@ -145,6 +163,16 @@ p {
 
         &:hover {
             color: black;
+        }
+
+        &--right {
+            float: right;
+            margin-right: 14px;
+        }
+
+        &--left {
+            float: left;
+            margin-left: 14px;
         }
     }
 }
@@ -171,48 +199,56 @@ p {
     }
 
     &__overlay {
-        background-color: rgba(0,0,0,.7);
+        background-color: rgba(0,0,0,.6);
         position: absolute;
         height: 100%;
         width: 100%;
     }
 
     &__container {
+        width: 100%;
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
 
         padding: 64px;
 
         text-align: left;
+
     }
 
     &__title {
         font-family: "aw-conqueror-didot";
-        font-size: 110px;
+        font-size: 48px;
         font-weight: 300;
         letter-spacing: -.01em;
         line-height: 1em;
+        text-align: center;
 
-        margin-bottom: 16px;
+        letter-spacing: 4px;
+        margin-bottom: 12px;
     }
 
     &__snippet {
-        margin-bottom: 32px;
+        margin-bottom: 0px;
         font-family: "futura-pt";
-        font-size: 32px;
+        font-size: 24px;
+        text-align: center;
     }
 }
 
 .social-media {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     width: 100%;
+    margin-top: 24px;
 
     &__icon {
-        height: 100px;
-        width: 100px;
-        margin-right: 36px;
+        height: 60px;
+        width: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
 
         &--red {
             background-color: red;
