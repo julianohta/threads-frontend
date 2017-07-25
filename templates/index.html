@@ -32,20 +32,56 @@
     </div>
     <div class="featured">
         {% if featured %}
-            {% for article in featured %}
-            <a href="{% url 'pub:article-detail' article.slug %}">
-            <div class="featured__item">
-                <div class="featured__img" style="background-image: url('media/{{ article.img }}')">
+            <div class="featured__item--half">
+                <div class="featured__item featured__item--whole">
+
+                    <a href="{% url 'pub:article-detail' featured.0.slug %}">
+                        <div class="featured__img" style="background-image: url('media/{{ featured.0.img }}')">
+
+                            <div class="featured__title">
+                                {{ featured.0.title }}
+                            </div>
+                        </div>
+                        <!--
+                        <div class="featured__info">
+                            {{ article.tag }}
+                        </div>
+                        -->
+                    </a>
                 </div>
-                <div class="featured__title">
-                    {{ article.title }}
+                <div class="featured__item featured__item--half">
+
+                    <a href="{% url 'pub:article-detail' featured.1.slug %}">
+                        <div class="featured__img" style="background-image: url('media/{{ featured.1.img }}')">
+
+                            <div class="featured__title">
+                                {{ featured.1.title }}
+                            </div>
+                        </div>
+                        <!--
+                        <div class="featured__info">
+                            {{ article.tag }}
+                        </div>
+                        -->
+                    </a>
                 </div>
-                <div class="featured__info">
-                    {{ article.tag }}
+                <div class="featured__item featured__item--half">
+
+                    <a href="{% url 'pub:article-detail' featured.2.slug %}">
+                        <div class="featured__img" style="background-image: url('media/{{ featured.2.img }}')">
+
+                            <div class="featured__title">
+                                {{ featured.2.title }}
+                            </div>
+                        </div>
+                        <!--
+                        <div class="featured__info">
+                            {{ article.tag }}
+                        </div>
+                        -->
+                    </a>
                 </div>
             </div>
-            </a>
-            {% endfor %}
         {% endif %}
     </div>
     <div class="about">
