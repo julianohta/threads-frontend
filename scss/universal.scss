@@ -199,7 +199,8 @@ p {
     }
 
     &__overlay {
-        background-color: rgba(0,0,0,.6);
+        background-color: rgba(0,0,0,.4);
+        background-size: 4px;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -220,7 +221,7 @@ p {
 
     &__title {
         font-family: "aw-conqueror-didot";
-        font-size: 48px;
+        font-size: 64px;
         font-weight: 300;
         letter-spacing: -.01em;
         line-height: 1em;
