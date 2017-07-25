@@ -37,7 +37,7 @@ a:link, a:visited, a:hover, a:active {
 
 .photogrid {
     padding: 4px;
-    margin-top: 120px;
+    margin-top: 10px;
 
     &__photo {
         padding-top: 100%;
@@ -50,11 +50,17 @@ a:link, a:visited, a:hover, a:active {
         width: 33.33%;
         float: left;
     }
+
+    &::after {
+        content: ' ';
+        display: block;
+        clear: both;
+    }
 }
 
 .about {
     width: 100%;
-    padding: 32px;
+    padding: 24px;
 
     &__container {
         &::after {
@@ -62,19 +68,19 @@ a:link, a:visited, a:hover, a:active {
             content: ' ';
             display: block;
         }
-        font-size: 24px;
+        font-size: 18px;
     }
 
     &__section {
         width: 50%;
-        padding: 32px;
+        padding: 24px;
         float: left;
     }
 
     &__img {
         width: 50%;
         background-clip: content-box;
-        padding: 32px;
+        padding: 24px;
         height: 400px;
         float: left;
         background-color: black;
@@ -84,12 +90,16 @@ a:link, a:visited, a:hover, a:active {
 .featured {
     margin-top: 700px;
     width: 100%;
-    padding: 24px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #202020;
+    color: white;
 
     &__item {
         display: inline-block;
-        width: 25%;
-        padding: 24px;
+        width: 33.333%;
+        padding-left: 48px;
         float: left;
     }
 
@@ -104,7 +114,7 @@ a:link, a:visited, a:hover, a:active {
     }
 
     &__img {
-        padding-top: 100%;
+        padding-top: 70%;
         width: 100%;
         background-color: white;
         background-size: cover;
@@ -263,10 +273,10 @@ p {
 @media (min-width: 700px) {
 
     .photogrid {
-        padding: 16px;
+        padding: 24px;
 
         &__container {
-            padding: 16px;
+            padding: 24px;
         }
     }
 }
