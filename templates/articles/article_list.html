@@ -7,16 +7,12 @@
     {% if articles_list %}
         <ul>
         {% for article in articles_list %}
-            <a href="{% url 'pub:article-detail' article.slug %}">
+            <a href="{% url 'blog:article-detail' article.slug %}">
                 <div class="blog__item">
                     <div class="blog__img" style="background-image: url('/media/{{ article.img }}')">
                     </div>
-                    <div class="blog__title">
-                        {{ article.title }}
-                    </div>
-                    <div class="blog__info">
-                        {{ article.tag }}
-                    </div>
+                    <h1>{{ article.title }}</h1>
+                    <p>{{ article.tag }}</p>
                 </div>
             </a>
         {% endfor %}
@@ -27,11 +23,11 @@
     <div class="pagination">
         <span class="step-links">
             {% if page_obj.has_previous %}
-                <a href="{% url 'pub:article-list' page=page_obj.previous_page_number %}">previous</a>
+                <a href="{% url 'blog:article-list' page=page_obj.previous_page_number %}">previous</a>
             {% endif %}
 
             {% if page_obj.has_next %}
-                <a href="{% url 'pub:article-list' page=page_obj.next_page_number %}">next</a>
+                <a href="{% url 'blog:article-list' page=page_obj.next_page_number %}">next</a>
             {% endif %}
         </span>
     </div>

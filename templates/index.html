@@ -36,7 +36,7 @@
                 {% if featured.0 %}
                 <div class="featured__item featured__item--whole">
 
-                    <a href="{% url 'pub:article-detail' featured.0.slug %}">
+                    <a href="{% url 'blog:article-detail' featured.0.slug %}">
                         <div class="featured__img" style="background-image: url('media/{{ featured.0.img }}')">
 
                             <div class="featured__title">
@@ -54,7 +54,7 @@
                 {% if featured.1 %}
                 <div class="featured__item featured__item--half">
 
-                    <a href="{% url 'pub:article-detail' featured.1.slug %}">
+                    <a href="{% url 'blog:article-detail' featured.1.slug %}">
                         <div class="featured__img" style="background-image: url('media/{{ featured.1.img }}')">
 
                             <div class="featured__title">
@@ -72,7 +72,7 @@
                 {% if featured.2 %}
                 <div class="featured__item featured__item--half">
 
-                    <a href="{% url 'pub:article-detail' featured.2.slug %}">
+                    <a href="{% url 'blog:article-detail' featured.2.slug %}">
                         <div class="featured__img" style="background-image: url('media/{{ featured.2.img }}')">
 
                             <div class="featured__title">
@@ -89,12 +89,12 @@
                 {% endif %}
             </div>
             <div class="right featured__item--half">
-                <a href="https://issuu.com/thethreadmagazine/docs/threadss17_finalpresentation" target="_blank">
                     <div class="featured__item featured__item--whole">
-                        <div class="featured__magazine" style="background-image: url('{% static 'img/magazine.png' %}');">
-                        </div>
+                        <a href="https://issuu.com/thethreadmagazine/docs/threadss17_finalpresentation" target="_blank">
+                            <div class="featured__magazine" style="background-image: url('{% static 'img/magazine.png' %}');">
+                            </div>
+                        </a>
                     </div>
-                </a>
             </div>
         {% endif %}
     </div>

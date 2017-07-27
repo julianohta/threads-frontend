@@ -6,7 +6,7 @@
     {% if photos %}
         {% for photo in photos %}
             <div class="photogrid__container">
-                <div class="photogrid__photo" style="background-image: url('/media/{{ photo.image }}');"></div>
+                <img src="/media/{{ photo.image }}">
             </div>
         {% endfor %}
     {% endif %}

@@ -22,9 +22,9 @@
                 <div class="nav__social-media" style="background-image: url('{% static 'img/icons8-Instagram.png' %}');"></div>
             </a>
             <div class="nav__item--right nav__item"><a href="{% url 'photography' %}">Media</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'pub:article-list' %}">Lifestyle</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'pub:article-list' %}">Art</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'pub:article-list' %}">Fashion</a></div>
+            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 2 1 %}">Lifestyle</a></div>
+            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 0 1 %}">Art</a></div>
+            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 1 1 %}">Fashion</a></div>
         </div>
     </div>
 

@@ -10,13 +10,28 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
   color: inherit; }
 
+h1 {
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 24px; }
+
+p {
+  margin-bottom: 18px; }
+
+img {
+  width: 100%;
+  margin-bottom: 18px; }
+
 .blog {
   margin: auto;
-  margin-top: 120px;
+  margin-top: 58px;
   width: 100%;
-  max-width: 700px; }
+  max-width: 600px;
+  padding: 32px;
+  padding-top: 0; }
   .blog__item {
-    padding: 32px; }
+    padding: 32px;
+    padding-top: 0; }
   .blog__title {
     font-size: 48px; }
   .blog__info {
@@ -24,7 +39,8 @@ a:link, a:visited, a:hover, a:active {
   .blog__img {
     width: 200px;
     height: 200px;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 22px; }
 
 .photogrid {
   padding: 4px;
@@ -44,7 +60,8 @@ a:link, a:visited, a:hover, a:active {
 
 .about {
   width: 100%;
-  padding: 24px; }
+  padding: 24px;
+  padding-top: 0; }
   .about__container {
     font-size: 18px; }
     .about__container::after {
@@ -67,6 +84,7 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 700px;
   width: 100%;
   padding: 24px;
+  padding-bottom: 0;
   # background-color: #202020;
   # color: white; }
   .featured__magazine {
@@ -89,7 +107,7 @@ a:link, a:visited, a:hover, a:active {
     .featured__item--two-thirds {
       width: 66.666%; }
   .featured__title {
-    font-size: 24px;
+    font-size: 22px;
     padding-top: 8px;
     padding-left: 8px; }
   .featured__info {

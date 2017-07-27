@@ -13,14 +13,32 @@ a:link, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+h1 {
+    margin-bottom: 16px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
 .blog {
     margin: auto;
-    margin-top: 120px;
+    margin-top: 58px;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
+    padding: 32px;
+    padding-top: 0;
 
     &__item {
         padding: 32px;
+        padding-top: 0;
     }
     &__title {
         font-size: 48px;
@@ -32,6 +50,7 @@ a:link, a:visited, a:hover, a:active {
         width: 200px;
         height: 200px;
         background-size: cover;
+        margin-bottom: 22px;
     }
 }
 
@@ -61,6 +80,7 @@ a:link, a:visited, a:hover, a:active {
 .about {
     width: 100%;
     padding: 24px;
+    padding-top: 0;
 
     &__container {
         &::after {
@@ -92,6 +112,7 @@ a:link, a:visited, a:hover, a:active {
     width: 100%;
 
     padding: 24px;
+    padding-bottom: 0;
     # background-color: #202020;
     # color: white;
 
@@ -129,7 +150,7 @@ a:link, a:visited, a:hover, a:active {
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 22px;
         padding-top: 8px;
         padding-left: 8px;
     }
