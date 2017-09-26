@@ -6,32 +6,37 @@
     <link rel="stylesheet" href="{% static 'css/universal.css' %}"></link>
 </head>
 <body>
+    <header>
+        <div class="header__title">
+            <a href="{% url 'home' %}">THREAD</a>
+        </div>
+        <video autoplay loop muted class="header__video">
+            <source src="{% static 'videos/placeholder.mp4' %}" type="video/mp4">
+        </video>
+    </header>
     <div class="nav">
-        <a href="{% url 'home' %}">
-            <div class="nav__icon" style="background-image: url('{% static 'img/ttm2.png' %}');">
-            </div>
-            <div class="nav__container">
-                <div class="nav__item--left nav__item">The Thread Magazine</div>
-            </div>
-        </a>
-        <div class="nav__container">
-            <a href="https://www.facebook.com/theThreadMagazine/" target="_blank">
-                <div class="nav__social-media" style="background-image: url('{% static 'img/icons8-Facebook.png' %}');"></div>
-            </a>
-            <a href="https://www.instagram.com/threadmag/?hl=en" target="_blank">
-                <div class="nav__social-media" style="background-image: url('{% static 'img/icons8-Instagram.png' %}');"></div>
-            </a>
-            <div class="nav__item--right nav__item"><a href="{% url 'photography' %}">Media</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 2 1 %}">Lifestyle</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 0 1 %}">Art</a></div>
-            <div class="nav__item--right nav__item"><a href="{% url 'blog:article-list' 1 1 %}">Fashion</a></div>
+        <div class="nav__wrap">
+            <div class="nav__item"><a href="{% url 'blog:article-list' '0' '1' %}">fashion</a></div>
+            <div class="nav__item"><a href="{% url 'blog:article-list' '1' '1' %}">lifestyle</a></div>
+            <div class="nav__item"><a href="{% url 'blog:article-list' '2' '1' %}">art</a></div>
+            <div class="nav__item"><a href="{% url 'photography' %}">photography</a></div>
         </div>
     </div>
-
     <main>
     {% block content %}
 
     {% endblock %}
     </main>
+    <div class="footer-spacer"></div>
+    <footer>
+        <div class="footer__col">
+            <p>hey</p>
+            <p>yo</p>
+        </div>
+        <div class="footer__col">
+            signup
+            <div class="footer__listserv"></div>
+        </div>
+    </footer>
 </body>
 </html>
