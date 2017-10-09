@@ -106,11 +106,11 @@ footer {
     font-family: PFdisplay;
     line-height: 20px; }
   .articles__img-filter-dark {
-    background-color: rgba(99, 69, 138, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
     height: 100%;
     width: 100%; }
   .articles__img-filter-light {
-    background-color: rgba(99, 69, 138, 0.35);
+    background-color: rgba(0, 0, 0, 0.35);
     height: 100%;
     width: 100%; }
   .articles-recent {
