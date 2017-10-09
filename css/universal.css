@@ -157,7 +157,8 @@ footer {
   padding-top: 0;
   width: 100%;
   max-width: 500px;
-  margin: auto; }
+  margin: auto;
+  overflow-x: none; }
 
 .about {
   padding-left: 12px;
