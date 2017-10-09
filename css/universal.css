@@ -198,7 +198,8 @@ footer {
     line-height: 32px;
     font-weight: 300;
     color: #202020;
-    font-family: Raleway; }
+    font-family: Raleway;
+    text-align: center; }
 
 .about {
   padding-left: 12px;
