@@ -113,6 +113,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.15);
     height: 100%;
     width: 100%; }
+  .articles__title {
+    font-size: 22px;
+    display: block;
+    font-family: Raleway;
+    font-weight: bold; }
   .articles-recent {
     width: 100%;
     float: right;

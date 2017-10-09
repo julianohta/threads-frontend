@@ -140,6 +140,13 @@ footer {
         }
     }
 
+    &__title {
+        font-size: 22px;
+        display: block;
+        font-family: Raleway;
+        font-weight: bold;
+    }
+
     &-recent {
         width: 100%;
         float: right;
