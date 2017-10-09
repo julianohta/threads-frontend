@@ -22,7 +22,7 @@
                 {% if featured.1 %}
                 <a href="{% url 'blog:article-detail' featured.1.slug %}">
                 <div class="articles-featured__small-item" style="background-image: url('media/{{ featured.1.img }}');">
-                    <div class="articles__img-filter">
+                    <div class="articles__img-filter-dark">
                     <div class="articles-featured__title"><h2 {% if featured.1.darkfont == False %}style="color: white;"{% endif %}>{{ featured.1.title }}</h2></div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                 {% if featured.2 %}
                 <a href="{% url 'blog:article-detail' featured.2.slug %}">
                 <div class="articles-featured__small-item" style="background-image: url('media/{{ featured.2.img }}');">
-                    <div class="articles__img-filter">
+                    <div class="articles__img-filter-dark">
                     <div class="articles-featured__title"><h2 {% if featured.2.darkfont == False %}style="color: white;"{% endif %}>{{ featured.2.title }}</h2></div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 {% if featured.3 %}
                 <a href="{% url 'blog:article-detail' featured.3.slug %}">
                 <div class="articles-featured__small-item" style="background-image: url('media/{{ featured.3.img }}');">
-                    <div class="articles__img-filter">
+                    <div class="articles__img-filter-dark">
                     <div class="articles-featured__title"><h2 {% if featured.3.darkfont == False %}style="color: white;"{% endif %}>{{ featured.3.title }}</h2></div>
                     </div>
                 </div>
