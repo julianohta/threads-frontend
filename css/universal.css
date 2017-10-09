@@ -190,8 +190,7 @@ footer {
     letter-spacing: 6px; }
   .about-wrap {
     width: 100%;
-    margin-bottom: 64px;
-    margin-top: 16px; }
+    margin-bottom: 64px; }
     .about-wrap::after {
       content: ' ';
       display: block;
