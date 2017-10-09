@@ -7,7 +7,9 @@
 .blog h1 {
   margin-left: 12px;
   margin-right: 8px;
-  font-size: 24px; }
+  font-size: 24px;
+  max-height: 28px;
+  overflow-y: hidden; }
 .blog p {
   margin-top: 4px;
   margin-left: 12px;
