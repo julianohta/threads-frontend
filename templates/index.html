@@ -13,7 +13,7 @@
             {% if featured.0 %}
             <a href="{% url 'blog:article-detail' featured.0.slug %}">
             <div class="articles-featured__big-item" style="background-image: url('media/{{ featured.0.img }}');">
-                <div class="articles__img-filter">
+                <div class="articles__img-filter-dark">
                 <div class="articles-featured__title"><h2 {% if featured.0.darkfont == False %}style="color: white;"{% endif %}>{{ featured.0.title }}</h2></div>
                 </div>
             </div></a>
@@ -53,11 +53,11 @@
             <a href="{% url 'blog:article-detail' recent.0.slug %}">
             <div class="articles-recent__item">
                 <div class="articles-recent__img" style="background-image: url('media/{{ recent.0.img }}');">
+                    <div class="articles__img-filter-light"></div>
 
                 </div>
                 <div class="articles-recent__text">
                     <h2>{{ recent.0.title }}</h2>
-                    <h3>{{ recent.0.author }}</h3>
                 </div>
             </div>
             </a>
@@ -66,11 +66,11 @@
             <a href="{% url 'blog:article-detail' recent.0.slug %}">
             <div class="articles-recent__item">
                 <div class="articles-recent__img" style="background-image: url('media/{{ recent.1.img }}');">
+                    <div class="articles__img-filter-light"></div>
 
                 </div>
                 <div class="articles-recent__text">
                     <h2>{{ recent.1.title }}</h2>
-                    <h3>{{ recent.1.author }}</h3>
                 </div>
             </div>
             </a>
@@ -79,11 +79,11 @@
             <a href="{% url 'blog:article-detail' recent.0.slug %}">
             <div class="articles-recent__item">
                 <div class="articles-recent__img" style="background-image: url('media/{{ recent.2.img }}');">
+                    <div class="articles__img-filter-light"></div>
 
                 </div>
                 <div class="articles-recent__text">
                     <h2>{{ recent.2.title }}</h2>
-                    <h3>{{ recent.2.author }}</h3>
                 </div>
             </div>
             </a>
@@ -92,11 +92,11 @@
             <a href="{% url 'blog:article-detail' recent.0.slug %}">
             <div class="articles-recent__item">
                 <div class="articles-recent__img" style="background-image: url('media/{{ recent.3.img }}');">
+                    <div class="articles__img-filter-light"></div>
 
                 </div>
                 <div class="articles-recent__text">
                     <h2>{{ recent.3.title }}</h2>
-                    <h3>{{ recent.3.author }}</h3>
                 </div>
             </div>
             </a>

@@ -80,8 +80,12 @@ footer {
     transform: translateY(-50%);
     right: 0;
     display: none; }
-  .articles__img-filter {
+  .articles__img-filter-dark {
     background-color: rgba(99, 69, 138, 0.35);
+    height: 100%;
+    width: 100%; }
+  .articles__img-filter-light {
+    background-color: rgba(99, 69, 138, 0.1);
     height: 100%;
     width: 100%; }
   .articles-recent {

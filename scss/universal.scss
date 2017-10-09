@@ -98,9 +98,17 @@ footer {
     }
 
     &__img-filter {
-        background-color: rgba(99, 69, 138, .35);
-        height: 100%;
-        width: 100%;
+        &-dark {
+            background-color: rgba(99, 69, 138, .35);
+            height: 100%;
+            width: 100%;
+        }
+
+        &-light {
+            background-color: rgba(99, 69, 138, .1);
+            height: 100%;
+            width: 100%;
+        }
     }
 
     &-recent {
