@@ -16,7 +16,9 @@ h3 {
 
 p {
   margin-bottom: 16px;
-  font-size: 20px; }
+  font-size: 20px;
+  font-family: Merriweather;
+  font-weight: 300; }
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
