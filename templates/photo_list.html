@@ -2,12 +2,36 @@
 
 {% load static %}
 
-{% block content %}<div class="photogrid">
-    {% if photos %}
-        {% for photo in photos %}
-            <div class="photogrid__container">
+{% block head %}
+    <link rel="stylesheet"  href="{% static 'css/photo.css' %}">
+{% endblock %}
+
+{% block content %}<div class="photo">
+    {% if photo_col1 %}
+        <div class="photo__col">
+        {% for photo in photo_col1 %}
+            <div class="photo__container">
                 <img src="/media/{{ photo.image }}">
             </div>
         {% endfor %}
+        </div>
+    {% endif %}
+    {% if photo_col2 %}
+        <div class="photo__col">
+        {% for photo in photo_col2 %}
+            <div class="photo__container">
+                <img src="/media/{{ photo.image }}">
+            </div>
+        {% endfor %}
+        </div>
+    {% endif %}
+    {% if photo_col3 %}
+        <div class="photo__col">
+        {% for photo in photo_col3 %}
+            <div class="photo__container">
+                <img src="/media/{{ photo.image }}">
+            </div>
+        {% endfor %}
+        </div>
     {% endif %}
 </div>{% endblock %}

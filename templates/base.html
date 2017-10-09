@@ -4,6 +4,21 @@
 <html>
 <head>
     <link rel="stylesheet" href="{% static 'css/universal.css' %}"></link>
+    <title>Thread</title>
+    <style>
+        /*
+        @font-face {
+            font-family: 'bludhaven';
+            src: url({% static 'fonts/roboto/BLUDHAVEN.ttf' %});
+        }
+        @font-face {
+            font-family: 'opensans';
+            src: url({% static 'fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf' %});
+        }
+        */
+    </style>
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
     <header>
@@ -11,7 +26,7 @@
             <a href="{% url 'home' %}">THREAD</a>
         </div>
         <video autoplay loop muted class="header__video">
-            <source src="{% static 'videos/placeholder.mp4' %}" type="video/mp4">
+            <source src="{% static 'videos/ThreadClip.mp4' %}" type="video/mp4">
         </video>
     </header>
     <div class="nav">

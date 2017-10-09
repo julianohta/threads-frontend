@@ -1,0 +1,28 @@
+img {
+  width: 100%; }
+
+.photo {
+  width: 100%;
+  padding: 16px;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .photo__col {
+    float: right;
+    width: 33.3333%;
+    overflow: hidden;
+    height: auto;
+    padding: 16px;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .photo__container {
+    width: 100%;
+    display: block;
+    padding-bottom: 32px; }
+  .photo img {
+    display: block; }
+  .photo::after {
+    clear: both;
+    content: ' ';
+    display: block; }
+
+/*# sourceMappingURL=photo.css.map */
