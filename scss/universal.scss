@@ -98,6 +98,12 @@ footer {
         display: none;
     }
 
+    &__img-filter {
+        background-color: rgba(99, 69, 138, .2);
+        height: 100%;
+        width: 100%;
+    }
+
     &-recent {
         width: 100%;
         float: right;
@@ -145,7 +151,7 @@ footer {
 
         &__big-item {
             width: 100%;
-            height: 308px;
+            height: 301px;
             background-color: black;
             background-clip: content-box;
             color: black;
@@ -306,6 +312,10 @@ $height: 64px;
             &__small-item {
                 height: 213px;
             }
+
+            &__big-item {
+                height: 400px;
+            }
         }
     }
 
@@ -385,6 +395,7 @@ $height: 64px;
                 padding-left: 33px;
                 padding-right: 12px;
                 padding-bottom: 12px;
+                height: 308px;
             }
 
             &__small-container {

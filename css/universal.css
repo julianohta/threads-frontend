@@ -81,6 +81,10 @@ footer {
     transform: translateY(-50%);
     right: 0;
     display: none; }
+  .articles__img-filter {
+    background-color: rgba(99, 69, 138, 0.2);
+    height: 100%;
+    width: 100%; }
   .articles-recent {
     width: 100%;
     float: right;
@@ -116,7 +120,7 @@ footer {
     float: right; }
     .articles-featured__big-item {
       width: 100%;
-      height: 308px;
+      height: 301px;
       background-color: black;
       background-clip: content-box;
       color: black;
@@ -226,6 +230,8 @@ footer {
 @media (min-width: 560px) {
   .articles-featured__small-item {
     height: 213px; }
+  .articles-featured__big-item {
+    height: 400px; }
 
   .nav__item {
     padding-left: 24px;
@@ -272,7 +278,8 @@ footer {
     .articles-featured__big-item {
       padding-left: 33px;
       padding-right: 12px;
-      padding-bottom: 12px; }
+      padding-bottom: 12px;
+      height: 308px; }
     .articles-featured__small-container {
       padding-left: 20px;
       width: 100%; }
