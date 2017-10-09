@@ -12,7 +12,7 @@
         margin-right: 8px;
         font-size: 24px;
         height: 28px;
-        overflow-y: hidden;
+        overflow-y: ellipis;
         display: block;
     }
 
@@ -22,7 +22,7 @@
         margin-right: 8px;
         font-size: 14px;
         max-height: 92px;
-        overflow-y: hidden;
+        overflow-y: ellipsis;
     }
 
     &__item {

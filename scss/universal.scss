@@ -43,7 +43,7 @@ header {
     height: 128px;
     position: relative;
     text-align: center;
-    overflow: hidden;
+    overflow: ellipsis;
 }
 
 body {
@@ -170,7 +170,7 @@ footer {
             top: 0;
             height: 100%;
             padding: 8px;
-            overflow: hidden;
+            overflow: ellipsis;
         }
 
         &::after {
@@ -240,7 +240,7 @@ footer {
     width: 100%;
     max-width: 700px;
     margin: auto;
-    overflow-x: hidden;
+    overflow-x: ellipsis;
 
     &__nav {
 
