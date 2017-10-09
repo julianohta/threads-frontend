@@ -7,22 +7,30 @@
 
 h1 {
     font-size: 32px;
+    font-family: Raleway;
+    font-weight: bold;
 }
 
 h2 {
     font-size: 28px;
+    font-family: Raleway;
+    font-weight: bold;
 }
 
 h3 {
     margin-bottom: 8px;
     font-size: 24px;
+    font-family: Raleway;
+    font-weight: bold;
 }
 
 p {
     margin-bottom: 16px;
-    font-size: 20px;
-    font-family: Merriweather;
+    font-size: 14px;
+    line-height: 32px;
     font-weight: 300;
+    color: #202020;
+    font-family: Raleway;
 }
 
 
@@ -40,18 +48,18 @@ header {
 
 body {
     background-color: #fafafa;
-    font-family: 'opensans';
 }
 
 .header {
     position: relative;
 
     &__title {
+        font-family: PFdisplay;
         display: inline-block;
-        font-size: 42px;
+        font-size: 52px;
         color: white;
         background-color: rgba(0,0,0,.2);
-        letter-spacing: 6px;
+        letter-spacing: 2px;
         padding: 4px;
         padding-right: 72px;
         padding-left: 82px;
@@ -59,7 +67,6 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: 'opensans';
     }
 
     &__video {
@@ -89,29 +96,34 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
     position: relative;
+    margin-bottom: 32px;
 
     &__title-left {
         position: absolute;
         width: 64px;
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
         text-transform: uppercase;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
         display: none;
+        font-family: PFdisplay;
+        line-height: 20px;
     }
     &__title-right {
         position: absolute;
         width: 64px;
         text-align: center;
         right: 0;
-        font-size: 24px;
+        font-size: 20px;
         text-transform: uppercase;
         top: 50%;
         transform: translateY(-50%);
         right: 0;
         display: none;
+        font-family: PFdisplay;
+        line-height: 20px;
     }
 
     &__img-filter {
@@ -122,7 +134,7 @@ footer {
         }
 
         &-light {
-            background-color: rgba(99, 69, 138, .1);
+            background-color: rgba(99, 69, 138, .35);
             height: 100%;
             width: 100%;
         }
@@ -222,13 +234,23 @@ footer {
 }
 
 .blog {
-    padding: 16px;
+    padding: 32px;
     padding-top: 0;
 
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
     overflow-x: hidden;
+
+    &__nav {
+
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 32px;
+        font-weight: 300;
+        color: #202020;
+        font-family: Raleway;
+    }
 }
 
 .about {
@@ -242,10 +264,13 @@ footer {
     &__title {
         height: 64px;
         line-height: 64px;
-        font-size: 24px;
+        font-size: 32px;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 6px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        font-family: PFdisplay;
+        margin-bottom: 32px;
     }
 
     &-wrap {
@@ -270,11 +295,22 @@ footer {
     &__img {
         height: 100%;
         width: 100%;
+        min-height: 400px;
         background-color: white;
-        height: 300px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        position: relative;
+
+        &-title {
+            display: block;
+            width: 100%;
+            font-family: Raleway;
+            text-align: center;
+            position: absolute;
+            top: 8px;
+            font-size: 20px;
+        }
     }
 
     &__text-col {
@@ -307,6 +343,8 @@ $height: 64px;
 .nav {
     height: $height;
     text-align: center;
+    font-family: PFdisplay;
+    text-transform: uppercase;
 
     &__wrap {
         margin: auto;
@@ -321,16 +359,44 @@ $height: 64px;
         padding-right: 12px;
         height: 100%;
         line-height: $height;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
+footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .footer {
+
+    &__title {
+        font-size: 24px;
+        font-family: PFdisplay;
+        color: white;
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+
+    &__wrap {
+        color: white;
+        width: 560px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin: auto;
+    }
+
     &__col {
         width: 100%;
         float: left;
-        padding: 16px;
+        padding: 4px;
         padding-top: 16px;
+        text-align: center;
+        font-family: Raleway;
+        text-transform: uppercase;
+        font-size: 16px;
     }
 
     &__listserv {
@@ -417,6 +483,7 @@ $height: 64px;
             position: absolute;
             top: 0;
             width: 50%;
+            min-height: inherit;
 
             &-right {
                 right: 0;

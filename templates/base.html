@@ -7,25 +7,30 @@
     <title>Thread</title>
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
     <style>
-        /*
         @font-face {
-            font-family: 'Merriweather';
-            src: url({% static 'fonts/Merriweather/Merriweather-Regular.ttf' %});
+            font-family: 'PTsans';
+            src: url({% static 'fonts/PT_Sans/PT_Sans-Web-Regular.ttf' %});
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'Merriweather';
-            src: url({% static 'fonts/Merriweather/Merriweather-Light.ttf' %});
-            font-weight: light;
+            font-family: 'PFdisplay';
+            src: url({% static 'fonts/Playfair_Display/PlayfairDisplay-Regular.ttf' %});
+            font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'Merriweather';
-            src: url({% static 'fonts/Merriweather/Merriweather-Bold.ttf' %});
+            font-family: 'Raleway';
+            src: url({% static 'fonts/Raleway/Raleway-Light.ttf' %});
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Raleway';
+            src: url({% static 'fonts/Raleway/Raleway-Regular.ttf' %});
             font-weight: bold;
             font-style: normal;
-        }*/
+        }
     </style>
     {% block head %}
     {% endblock %}
@@ -54,17 +59,20 @@
     </main>
     <div class="footer-spacer"></div>
     <footer>
-        <div class="footer__col">
-            <p><a target="_blank" href="https://thread-mag.com">website</a></p>
-        </div>
-        <div class="footer__col">
-            <p><a target="_blank" href="https://facebook.com/thethreadmagazine">facebook</a></p>
-        </div>
-        <div class="footer__col">
-            <p><a target="_blank" href="https://www.instagram.com/threadmag/">instagram</a></p>
-        </div>
-        <div class="footer__col">
-            <p><a href = "mailto: thethreadmagazine@gmail.com">contact us</a></p>
+        <div class="footer__title">Follow Us</div>
+        <div class="footer__wrap">
+            <div class="footer__col">
+                <a target="_blank" href="https://facebook.com/thethreadmagazine">facebook</a>
+            </div>
+            <div class="footer__col">
+                <a target="_blank" href="https://www.instagram.com/threadmag/">instagram</a>
+            </div>
+            <div class="footer__col">
+                <a href = "mailto: thethreadmagazine@gmail.com">email</a>
+            </div>
+            <div class="footer__col">
+                <a target="_blank" href="https://issuu.com/thethreadmagazine/docs/threadss17_finalpresentation">publication</a>
+            </div>
         </div>
     </footer>
 </body>

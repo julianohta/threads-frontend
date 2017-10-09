@@ -9,11 +9,18 @@
 
     & h1 {
         margin-bottom: 18px;
-        font-size: 24px;
+        display: block;
+        text-align: center;
     }
 
     & p {
         margin-bottom: 24px;
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    &__nav {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
     }
 }
