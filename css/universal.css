@@ -4,8 +4,19 @@
   padding: 0;
   font-weight: normal; }
 
+h1 {
+  font-size: 32px; }
+
 h2 {
   font-size: 24px; }
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 24px; }
+
+p {
+  margin-bottom: 16px;
+  font-size: 20px; }
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
@@ -175,31 +186,36 @@ footer {
     letter-spacing: 6px; }
   .about-wrap {
     width: 100%;
-    padding-bottom: 32px;
-    overflow: hidden; }
+    margin-bottom: 64px;
+    margin-top: 16px; }
     .about-wrap::after {
       content: ' ';
       display: block;
       clear: both; }
   .about__item-left {
-    float: left;
-    height: 300px; }
+    float: left; }
   .about__item-right {
-    float: right;
-    height: 300px; }
+    float: right; }
   .about__img {
     height: 100%;
     width: 100%;
-    background-color: black; }
+    background-color: white;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .about__text-col {
     width: 100%;
     max-width: 400px;
     height: 100%;
     margin: auto;
-    padding-top: 64px; }
+    padding-top: 64px;
+    min-height: 300px; }
   .about__spacer {
     margin-top: 18px; }
   .about__third {
+    width: 100%; }
+  .about__half {
     width: 100%; }
   .about__two-third {
     width: 100%; }
@@ -223,8 +239,8 @@ footer {
 .footer__col {
   width: 100%;
   float: left;
-  padding: 64px;
-  padding-top: 64px; }
+  padding: 16px;
+  padding-top: 16px; }
 .footer__listserv {
   width: 100%;
   height: 22px;
@@ -245,7 +261,7 @@ footer {
     padding-right: 24px; }
 
   .footer__col {
-    width: 50%; }
+    width: 25%; }
 
   .about {
     padding-left: 64px;
@@ -255,20 +271,33 @@ footer {
     width: 33.333%; }
   .about__two-third {
     width: 66.666%; }
+  .about__half {
+    width: 50%; }
   .about__item-left {
     padding-right: 32px;
-    float: left;
-    height: 300px; }
+    float: left; }
   .about__item-right {
     padding-left: 32px;
-    float: right;
-    height: 300px; }
+    float: right; }
   .about__text-col {
     width: 100%;
-    max-width: 280px;
-    height: 100%;
-    margin: auto;
-    padding-top: 0; }
+    padding-top: 0;
+    margin: inherit;
+    max-width: inherit; }
+  .about-wrap {
+    position: relative; }
+  .about__img {
+    position: absolute;
+    top: 0;
+    width: 50%; }
+    .about__img-right {
+      right: 0;
+      padding-left: 32px;
+      background-clip: content-box; }
+    .about__img-left {
+      left: 0;
+      padding-right: 32px;
+      background-clip: content-box; }
 
   .articles {
     padding-left: 64px;

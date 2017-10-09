@@ -5,17 +5,16 @@
 <head>
     <link rel="stylesheet" href="{% static 'css/universal.css' %}"></link>
     <title>Thread</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
     <style>
-        /*
         @font-face {
-            font-family: 'bludhaven';
-            src: url({% static 'fonts/roboto/BLUDHAVEN.ttf' %});
+            font-family: 'rbmono';
+            src: url({% static 'fonts/Roboto_Mono/RobotoMono-Regular.ttf' %});
         }
         @font-face {
-            font-family: 'opensans';
-            src: url({% static 'fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf' %});
+            font-family: 'saira';
+            src: url({% static 'fonts/Saira_Semi_Condensed/SairaSemiCondensed-Regular.ttf' %});
         }
-        */
     </style>
     {% block head %}
     {% endblock %}
@@ -45,12 +44,16 @@
     <div class="footer-spacer"></div>
     <footer>
         <div class="footer__col">
-            <p>hey</p>
-            <p>yo</p>
+            <p><a target="_blank" href="https://thread-mag.com">website</a></p>
         </div>
         <div class="footer__col">
-            signup
-            <div class="footer__listserv"></div>
+            <p><a target="_blank" href="https://facebook.com/thethreadmagazine">facebook</a></p>
+        </div>
+        <div class="footer__col">
+            <p><a target="_blank" href="https://www.instagram.com/threadmag/">instagram</a></p>
+        </div>
+        <div class="footer__col">
+            <p><a href = "mailto: thethreadmagazine@gmail.com">contact us</a></p>
         </div>
     </footer>
 </body>
