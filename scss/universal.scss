@@ -235,6 +235,10 @@ footer {
     padding-left: 12px;
     padding-right: 12px;
 
+    &__center {
+        text-align: center;
+    }
+
     &__title {
         height: 64px;
         line-height: 64px;
