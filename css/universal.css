@@ -1,83 +1,294 @@
-/*
-Error: $alpha: (0.3 0.5) is not a number for `rgba'
-        on line 101 of scss/universal.scss
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
 
-96:         right: 0;
-97:         display: none;
-98:     }
-99: 
-100:     &__img-filter {
-101:         background-color: rgba(99, 69, 138, .3.5);
-102:         height: 100%;
-103:         width: 100%;
-104:     }
-105: 
-106:     &-recent {
+h2 {
+  font-size: 24px; }
 
-Backtrace:
-scss/universal.scss:101
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:310:in `reformat_argument_error'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:149:in `rescue in _perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/funcall.rb:123:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: $alpha: (0.3 0.5) is not a number for `rgba'\A         on line 101 of scss/universal.scss\A \A 96:         right: 0;\A 97:         display: none;\A 98:     }\A 99: \A 100:     &__img-filter {\A 101:         background-color: rgba(99, 69, 138, .3.5);\A 102:         height: 100%;\A 103:         width: 100%;\A 104:     }\A 105: \A 106:     &-recent {"; }
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+header {
+  height: 128px;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
+body {
+  background-color: #fafafa;
+  font-family: 'opensans'; }
+
+.header {
+  position: relative; }
+  .header__title {
+    display: inline-block;
+    font-size: 42px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 6px;
+    padding: 4px;
+    padding-right: 72px;
+    padding-left: 82px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'opensans'; }
+  .header__video {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: -5; }
+
+footer {
+  bottom: 0;
+  background-color: black;
+  height: auto;
+  color: white; }
+  footer::after {
+    display: block;
+    content: ' ';
+    clear: both; }
+
+.articles {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative; }
+  .articles__title-left {
+    position: absolute;
+    width: 64px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: none; }
+  .articles__title-right {
+    position: absolute;
+    width: 64px;
+    text-align: center;
+    right: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: none; }
+  .articles__img-filter {
+    background-color: rgba(99, 69, 138, 0.35);
+    height: 100%;
+    width: 100%; }
+  .articles-recent {
+    width: 100%;
+    float: right;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 12px; }
+    .articles-recent__item {
+      height: 124px;
+      width: 100%;
+      position: relative; }
+    .articles-recent__img {
+      height: 124px;
+      width: 124px;
+      background-color: white;
+      float: left;
+      background-clip: content-box;
+      padding: 12px;
+      background-size: cover;
+      background-position: center; }
+    .articles-recent__text {
+      position: absolute;
+      left: 124px;
+      top: 0;
+      height: 100%;
+      padding: 8px;
+      overflow: hidden; }
+    .articles-recent::after {
+      clear: both;
+      content: ' ';
+      display: block; }
+  .articles-featured {
+    width: 100%;
+    float: right; }
+    .articles-featured__big-item {
+      width: 100%;
+      height: 301px;
+      background-color: black;
+      background-clip: content-box;
+      color: black;
+      background-size: cover;
+      background-position: center; }
+    .articles-featured__small-container {
+      padding-left: 0;
+      width: 100%; }
+      .articles-featured__small-container::after {
+        content: ' ';
+        display: block;
+        clear: both; }
+    .articles-featured__small-item {
+      background-size: cover;
+      background-position: center;
+      color: black;
+      width: 33.33333%;
+      height: 152px;
+      float: left;
+      background-color: black;
+      background-clip: content-box; }
+    .articles-featured__title {
+      padding: 12px;
+      color: black;
+      font-size: 20px;
+      display: inline-block; }
+  .articles::after {
+    content: ' ';
+    display: block;
+    clear: both; }
+
+.blog {
+  padding: 16px;
+  padding-top: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow-x: hidden; }
+
+.about {
+  padding-left: 12px;
+  padding-right: 12px; }
+  .about__title {
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px; }
+  .about-wrap {
+    width: 100%;
+    padding-bottom: 32px;
+    overflow: hidden; }
+    .about-wrap::after {
+      content: ' ';
+      display: block;
+      clear: both; }
+  .about__item-left {
+    float: left;
+    height: 300px; }
+  .about__item-right {
+    float: right;
+    height: 300px; }
+  .about__img {
+    height: 100%;
+    width: 100%;
+    background-color: black; }
+  .about__text-col {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    padding-top: 64px; }
+  .about__spacer {
+    margin-top: 18px; }
+  .about__third {
+    width: 100%; }
+  .about__two-third {
+    width: 100%; }
+
+.nav {
+  height: 64px;
+  text-align: center; }
+  .nav__wrap {
+    margin: auto;
+    width: auto;
+    display: inline-block;
+    height: 100%; }
+  .nav__item {
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 100%;
+    line-height: 64px;
+    font-size: 18px; }
+
+.footer__col {
+  width: 100%;
+  float: left;
+  padding: 64px;
+  padding-top: 64px; }
+.footer__listserv {
+  width: 100%;
+  height: 22px;
+  background-color: white;
+  display: block; }
+
+@media (min-width: 560px) {
+  .articles-featured__small-item {
+    height: 213px; }
+  .articles-featured__big-item {
+    height: 400px; }
+
+  .nav__item {
+    padding-left: 24px;
+    padding-right: 24px; }
+
+  .footer__col {
+    width: 50%; }
+
+  .about {
+    padding-left: 64px;
+    padding-right: 64px; }
+
+  .articles {
+    padding-left: 64px;
+    padding-right: 52px; } }
+@media (min-width: 940px) {
+  .about__third {
+    width: 33.333%; }
+  .about__two-third {
+    width: 66.666%; }
+  .about__item-left {
+    padding-right: 32px;
+    float: left;
+    height: 300px; }
+  .about__item-right {
+    padding-left: 32px;
+    float: right;
+    height: 300px; }
+  .about__text-col {
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    margin: auto;
+    padding-top: 0; }
+
+  .articles-recent {
+    width: 33.3333%; }
+  .articles__title-left {
+    display: inherit; }
+  .articles__title-right {
+    display: inherit; }
+  .articles-featured {
+    width: 66.666%; }
+    .articles-featured__big-item {
+      padding-left: 33px;
+      padding-right: 12px;
+      padding-bottom: 12px;
+      height: 308px; }
+    .articles-featured__small-container {
+      padding-left: 20px;
+      width: 100%; }
+      .articles-featured__small-container::after {
+        content: ' ';
+        display: block;
+        clear: both; }
+    .articles-featured__small-item {
+      padding: 12px;
+      padding-bottom: 1px; } }
+
+/*# sourceMappingURL=universal.css.map */
