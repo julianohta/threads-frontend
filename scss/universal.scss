@@ -137,7 +137,7 @@ body {
     &-recent {
         width: 100%;
         float: right;
-        background-color: #e0e0e0;
+        background-color: #eaeaea;
         color: black;
         padding: 12px;
 
@@ -360,9 +360,9 @@ $height: 64px;
 
 footer {
     bottom: 0;
-    background-color: black;
+    background-color: #eaeaea;
     height: auto;
-    color: white;
+    color: black;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -378,7 +378,7 @@ footer {
     &__title {
         font-size: 24px;
         font-family: PFdisplay;
-        color: white;
+        color: black;
         text-align: center;
         width: 100%;
         text-transform: uppercase;
@@ -386,7 +386,7 @@ footer {
     }
 
     &__wrap {
-        color: white;
+        color: black;
         width: 560px;
         padding-left: 32px;
         padding-right: 32px;
