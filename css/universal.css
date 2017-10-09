@@ -232,10 +232,13 @@ footer {
   display: block; }
 
 @media (min-width: 560px) {
-  .articles-featured__small-item {
-    height: 213px; }
-  .articles-featured__big-item {
-    height: 400px; }
+  .articles {
+    padding-left: 64px;
+    padding-right: 64px; }
+    .articles-featured__small-item {
+      height: 213px; }
+    .articles-featured__big-item {
+      height: 400px; }
 
   .nav__item {
     padding-left: 24px;
@@ -246,11 +249,7 @@ footer {
 
   .about {
     padding-left: 64px;
-    padding-right: 64px; }
-
-  .articles {
-    padding-left: 64px;
-    padding-right: 52px; } }
+    padding-right: 64px; } }
 @media (min-width: 940px) {
   .about__third {
     width: 33.333%; }
@@ -271,28 +270,31 @@ footer {
     margin: auto;
     padding-top: 0; }
 
-  .articles-recent {
-    width: 33.3333%; }
-  .articles__title-left {
-    display: inherit; }
-  .articles__title-right {
-    display: inherit; }
-  .articles-featured {
-    width: 66.666%; }
-    .articles-featured__big-item {
-      padding-left: 33px;
-      padding-right: 12px;
-      padding-bottom: 12px;
-      height: 308px; }
-    .articles-featured__small-container {
-      padding-left: 20px;
-      width: 100%; }
-      .articles-featured__small-container::after {
-        content: ' ';
-        display: block;
-        clear: both; }
-    .articles-featured__small-item {
-      padding: 12px;
-      padding-bottom: 1px; } }
+  .articles {
+    padding-left: 64px;
+    padding-right: 52px; }
+    .articles-recent {
+      width: 33.3333%; }
+    .articles__title-left {
+      display: inherit; }
+    .articles__title-right {
+      display: inherit; }
+    .articles-featured {
+      width: 66.666%; }
+      .articles-featured__big-item {
+        padding-left: 33px;
+        padding-right: 12px;
+        padding-bottom: 12px;
+        height: 308px; }
+      .articles-featured__small-container {
+        padding-left: 20px;
+        width: 100%; }
+        .articles-featured__small-container::after {
+          content: ' ';
+          display: block;
+          clear: both; }
+      .articles-featured__small-item {
+        padding: 12px;
+        padding-bottom: 1px; } }
 
 /*# sourceMappingURL=universal.css.map */

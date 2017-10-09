@@ -316,6 +316,9 @@ $height: 64px;
 
 @media (min-width: 560px) {
     .articles {
+        padding-left: 64px;
+        padding-right: 64px;
+
         &-featured {
             &__small-item {
                 height: 213px;
@@ -342,11 +345,6 @@ $height: 64px;
     .about {
         padding-left: 64px;
         padding-right: 64px;
-    }
-
-    .articles {
-        padding-left: 64px;
-        padding-right: 52px;
     }
 }
 
@@ -385,6 +383,9 @@ $height: 64px;
 
 
     .articles {
+
+        padding-left: 64px;
+        padding-right: 52px;
         &-recent {
             width: 33.3333%
         }
