@@ -19,7 +19,7 @@ header {
     position: relative;
     text-align: center;
     overflow: hidden;
-    background-color: rgba(138,43,226, .1);
+    background-color: rgba(138,43,226, .2);
 }
 
 body {
@@ -204,7 +204,7 @@ footer {
     width: 100%;
     max-width: 500px;
     margin: auto;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 .about {
