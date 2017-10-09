@@ -36,7 +36,7 @@ header {
   height: 128px;
   position: relative;
   text-align: center;
-  overflow: ellipsis; }
+  overflow: hidden; }
 
 body {
   background-color: #fafafa; }
@@ -138,7 +138,7 @@ footer {
       top: 0;
       height: 100%;
       padding: 8px;
-      overflow: ellipsis; }
+      overflow: hidden; }
     .articles-recent::after {
       clear: both;
       content: ' ';
@@ -186,7 +186,7 @@ footer {
   width: 100%;
   max-width: 700px;
   margin: auto;
-  overflow-x: ellipsis; }
+  overflow-x: hidden; }
   .blog__nav {
     margin-bottom: 16px;
     font-size: 14px;
