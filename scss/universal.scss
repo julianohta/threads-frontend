@@ -19,7 +19,6 @@ header {
     position: relative;
     text-align: center;
     overflow: hidden;
-    background-color: rgba(138,43,226, .5);
 }
 
 body {
@@ -99,7 +98,7 @@ footer {
     }
 
     &__img-filter {
-        background-color: rgba(99, 69, 138, .2);
+        background-color: rgba(99, 69, 138, .3);
         height: 100%;
         width: 100%;
     }

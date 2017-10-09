@@ -15,8 +15,7 @@ header {
   height: 128px;
   position: relative;
   text-align: center;
-  overflow: hidden;
-  background-color: rgba(138, 43, 226, 0.5); }
+  overflow: hidden; }
 
 body {
   background-color: #fafafa;
@@ -82,7 +81,7 @@ footer {
     right: 0;
     display: none; }
   .articles__img-filter {
-    background-color: rgba(99, 69, 138, 0.2);
+    background-color: rgba(99, 69, 138, 0.3);
     height: 100%;
     width: 100%; }
   .articles-recent {
