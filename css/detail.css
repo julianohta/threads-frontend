@@ -1,5 +1,6 @@
 .blog img {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
   margin-bottom: 18px; }
 .blog h1 {
   margin-bottom: 18px;

@@ -91,7 +91,7 @@ footer {
   .articles-recent {
     width: 100%;
     float: right;
-    background-color: #1a1a1a;
+    background-color: black;
     color: white;
     padding: 12px; }
     .articles-recent__item {
