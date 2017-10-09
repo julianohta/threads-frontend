@@ -9,14 +9,29 @@
 {% block content %}<div class="blog">
 
     {% if articles_list %}
+        <div class="blog__title">
+            {% if articles_list.0.genre == 0 %}
+            Art
+            {% endif %}
+            {% if articles_list.0.genre == 1 %}
+            Fashion
+            {% endif %}
+            {% if articles_list.0.genre == 2 %}
+            Lifestyle
+            {% endif %}
+        </div>
         <ul>
         {% for article in articles_list %}
             <a href="{% url 'blog:article-detail' article.slug %}">
                 <div class="blog__item">
-                    <div class="blog__img" style="background-image: url('/media/{{ article.img }}')">
+                    <div class="blog__left">
+                        <div class="blog__img" style="background-image: url('/media/{{ article.img }}')">
+                        </div>
                     </div>
-                    <h1>{{ article.title }}</h1>
-                    <p>{{ article.tag }}</p>
+                    <div class="blog__right">
+                        <h1>{{ article.title }}</h1>
+                        <p>{{ article.tag }}</p>
+                    </div>
                 </div>
             </a>
         {% endfor %}
