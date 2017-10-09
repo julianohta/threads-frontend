@@ -65,16 +65,6 @@ body {
     left: 0;
     z-index: -5; }
 
-footer {
-  bottom: 0;
-  background-color: black;
-  height: auto;
-  color: white; }
-  footer::after {
-    display: block;
-    content: ' ';
-    clear: both; }
-
 .articles {
   padding-left: 0px;
   padding-right: 0px;
@@ -121,7 +111,7 @@ footer {
   .articles-recent {
     width: 100%;
     float: right;
-    background-color: black;
+    background-color: #2a2a2a;
     color: white;
     padding: 12px; }
     .articles-recent__item {
@@ -279,8 +269,16 @@ footer {
     font-size: 14px; }
 
 footer {
+  bottom: 0;
+  background-color: black;
+  height: auto;
+  color: white;
   padding-top: 32px;
   padding-bottom: 32px; }
+  footer::after {
+    display: block;
+    content: ' ';
+    clear: both; }
 
 .footer__title {
   font-size: 24px;

@@ -79,19 +79,6 @@ body {
     }
 }
 
-footer {
-    bottom: 0;
-    background-color: black;
-    height: auto;
-    color: white;
-
-    &::after {
-        display: block;
-        content: ' ';
-        clear: both;
-    }
-}
-
 .articles {
     padding-left: 0px;
     padding-right: 0px;
@@ -150,7 +137,7 @@ footer {
     &-recent {
         width: 100%;
         float: right;
-        background-color: black;
+        background-color: #2a2a2a;
         color: white;
         padding: 12px;
 
@@ -372,8 +359,18 @@ $height: 64px;
 }
 
 footer {
+    bottom: 0;
+    background-color: black;
+    height: auto;
+    color: white;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &::after {
+        display: block;
+        content: ' ';
+        clear: both;
+    }
 }
 
 .footer {

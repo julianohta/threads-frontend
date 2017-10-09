@@ -7,6 +7,7 @@
 
 {% block content %}<div class="blog">
     <h1>{{ article.title }}</h1>
+    <div class="blog__author">{{ article.author }}</div>
     {{ article.body|safe }}
     <a href="{{ request.META.HTTP_REFERER }}">
     <div class="blog__nav">back</div>
