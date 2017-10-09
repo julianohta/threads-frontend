@@ -12,7 +12,9 @@
   margin-top: 4px;
   margin-left: 12px;
   margin-right: 8px;
-  font-size: 20px; }
+  font-size: 20px;
+  max-height: 92px;
+  overflow-y: hidden; }
 .blog__item {
   padding: 12px;
   position: relative;
