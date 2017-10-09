@@ -44,5 +44,15 @@
   margin-bottom: 24px;
   font-family: PFdisplay;
   text-transform: uppercase; }
+.blog__next {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  margin-top: 4px; }
+.blog__prev {
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  margin-top: 4px; }
 
 /*# sourceMappingURL=list.css.map */

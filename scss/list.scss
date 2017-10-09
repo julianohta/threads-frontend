@@ -60,4 +60,18 @@
         font-family: PFdisplay;
         text-transform: uppercase;
     }
+
+    &__next {
+        display: inline-block;
+        float: right;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+
+    &__prev {
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+        margin-top: 4px;
+    }
 }
