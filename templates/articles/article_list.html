@@ -27,11 +27,11 @@
     <div class="pagination">
         <span class="step-links">
             {% if page_obj.has_previous %}
-                <a href="{% url 'blog:article-list' page=page_obj.previous_page_number %}">previous</a>
+                <a href="{% url 'blog:article-list' page=page_obj.previous_page_number genre=article.0.genre %}">previous</a>
             {% endif %}
 
             {% if page_obj.has_next %}
-                <a href="{% url 'blog:article-list' page=page_obj.next_page_number %}">next</a>
+                <a href="{% url 'blog:article-list' page=page_obj.next_page_number genre=article.0.genre %}">next</a>
             {% endif %}
         </span>
     </div>
