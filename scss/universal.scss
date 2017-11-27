@@ -46,10 +46,6 @@ header {
     overflow: hidden;
 }
 
-body {
-    background-color: #fafafa;
-}
-
 .header {
     position: relative;
 
@@ -312,7 +308,6 @@ body {
         max-width: 400px;
         height: 100%;
         margin: auto;
-        padding-top: 64px;
         min-height: 300px;
     }
 
@@ -386,10 +381,10 @@ footer {
 
     &__wrap {
         color: black;
-        width: 560px;
         padding-left: 32px;
         padding-right: 32px;
         margin: auto;
+        max-width:560px;
     }
 
     &__col {
@@ -474,7 +469,7 @@ footer {
 
         &__text-col {
             width: 100%;
-            padding-top: 0;
+            padding-top: 64px;
             margin: inherit;
             max-width: inherit;
         }

@@ -1,0 +1,15 @@
+.parent {
+  backgound-color: blue; }
+
+.child {
+  backgound-color: red; }
+
+.parent {
+  backgound-color: yellow; }
+  .parent__child {
+    backgound-color: black; }
+
+.parent {
+  backgound-color: yellow; }
+
+/*# sourceMappingURL=test.css.map */

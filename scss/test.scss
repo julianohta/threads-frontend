@@ -1,0 +1,24 @@
+.parent {
+    backgound-color: blue;
+}
+
+.child {
+    backgound-color: red;
+}
+
+.parent {
+    backgound-color: yellow;
+
+    &__child {
+        backgound-color: black;
+    }
+}
+
+.parent {
+    backgound-color: yellow;
+}
+
+.parent__child {
+
+}
+

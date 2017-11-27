@@ -38,9 +38,6 @@ header {
   text-align: center;
   overflow: hidden; }
 
-body {
-  background-color: #fafafa; }
-
 .header {
   position: relative; }
   .header__title {
@@ -238,7 +235,6 @@ body {
     max-width: 400px;
     height: 100%;
     margin: auto;
-    padding-top: 64px;
     min-height: 300px; }
   .about__spacer {
     margin-top: 18px; }
@@ -289,10 +285,10 @@ footer {
   padding-bottom: 12px; }
 .footer__wrap {
   color: black;
-  width: 560px;
   padding-left: 32px;
   padding-right: 32px;
-  margin: auto; }
+  margin: auto;
+  max-width: 560px; }
 .footer__col {
   width: 100%;
   float: left;
@@ -342,7 +338,7 @@ footer {
     float: right; }
   .about__text-col {
     width: 100%;
-    padding-top: 0;
+    padding-top: 64px;
     margin: inherit;
     max-width: inherit; }
   .about-wrap {
