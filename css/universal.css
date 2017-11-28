@@ -235,7 +235,15 @@ header {
     max-width: 400px;
     height: 100%;
     margin: auto;
-    min-height: 300px; }
+    min-height: 300px;
+    padding-top: 64px; }
+  .about__text-col-bot {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+    min-height: 300px;
+    padding-top: 0; }
   .about__spacer {
     margin-top: 18px; }
   .about__third {
@@ -338,9 +346,10 @@ footer {
     float: right; }
   .about__text-col {
     width: 100%;
-    padding-top: 64px;
     margin: inherit;
     max-width: inherit; }
+  .about__text-col-bot {
+    padding-top: 64px; }
   .about-wrap {
     position: relative; }
   .about__img {

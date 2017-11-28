@@ -309,6 +309,16 @@ header {
         height: 100%;
         margin: auto;
         min-height: 300px;
+        padding-top: 64px;
+    }
+
+    &__text-col-bot {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        margin: auto;
+        min-height: 300px;
+        padding-top: 0;
     }
 
     &__spacer {
@@ -469,10 +479,14 @@ footer {
 
         &__text-col {
             width: 100%;
-            padding-top: 64px;
             margin: inherit;
             max-width: inherit;
         }
+
+        &__text-col-bot {
+            padding-top: 64px;
+        }
+
 
         &-wrap {
             position: relative;
