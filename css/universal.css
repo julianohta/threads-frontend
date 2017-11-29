@@ -104,13 +104,18 @@ header {
     font-size: 20px;
     display: block;
     font-family: Raleway;
-    font-weight: bold; }
+    font-weight: normal;
+    letter-spacing: 1px; }
   .articles-recent {
     width: 100%;
+    height: 520px;
     float: right;
     background-color: #eaeaea;
     color: black;
-    padding: 12px; }
+    padding: 12px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
     .articles-recent__item {
       height: 124px;
       width: 100%;
@@ -164,6 +169,7 @@ header {
       background-clip: content-box; }
     .articles-featured__title {
       padding: 12px;
+      padding-right: 0;
       color: black;
       font-size: 20px;
       display: inline-block; }

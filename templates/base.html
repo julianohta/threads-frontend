@@ -20,6 +20,18 @@
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
     <style>
         @font-face {
+            font-family: 'EBGaramond';
+            src: url({% static 'fonts/EB_Garamond/EBGaramond-Regular.ttf' %});
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Garamond';
+            src: url({% static 'fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf' %});
+            font-weight: light;
+            font-style: normal;
+        }
+        @font-face {
             font-family: 'PTsans';
             src: url({% static 'fonts/PT_Sans/PT_Sans-Web-Regular.ttf' %});
             font-weight: normal;
@@ -62,6 +74,7 @@
             <div class="nav__item"><a href="{% url 'blog:article-list' 'lifestyle' '1' %}">lifestyle</a></div>
             <div class="nav__item"><a href="{% url 'blog:article-list' 'art' '1' %}">art</a></div>
             <div class="nav__item"><a href="{% url 'photography' %}">photography</a></div>
+            <div class="nav__item"><a href="{% url 'tot' %}">threads of thread</a></div>
         </div>
     </div>
     <main>

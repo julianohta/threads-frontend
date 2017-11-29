@@ -7,7 +7,7 @@
 
 {% block content %}
     <div class="articles">
-        <div class="articles__title-left">r<br>e<br>c<br>e<br>n<br>t</div>
+        <div class="articles__title-left">i<br>s<br>s<br>u<br>e</div>
         <div class="articles__title-right">f<br>e<br>a<br>t<br>u<br>r<br>e<br>d</div>
         <div class="articles-featured">
             {% if featured.0 %}
@@ -49,60 +49,10 @@
                 {% endif %}
             </div>
         </div>
-        <div class="articles-recent">
-            {% if recent.0 %}
-            <div class="articles-recent__item">
-                <a href="{% url 'blog:article-detail' recent.0.slug %}">
-                <div class="articles-recent__img" style="background-image: url('media/{{ recent.0.img }}');">
-                    <div class="articles__img-filter-light"></div>
-
-                </div>
-                <div class="articles-recent__text">
-                    <div class="articles__title">{{ recent.0.title }}</div>
-                </div>
-                </a>
+        <a href="https://issuu.com/thethreadmagazine/docs/threadfw17_1130pm">
+            <div class="articles-recent" style="background-image: url('{% static 'img/threadfw17.png' %}');">
             </div>
-            {% endif %}
-            {% if recent.1 %}
-            <div class="articles-recent__item">
-            <a href="{% url 'blog:article-detail' recent.1.slug %}">
-                <div class="articles-recent__img" style="background-image: url('media/{{ recent.1.img }}');">
-                    <div class="articles__img-filter-light"></div>
-
-                </div>
-                <div class="articles-recent__text">
-                    <div class="articles__title">{{ recent.1.title }}</div>
-                </div>
-            </a>
-            </div>
-            {% endif %}
-            {% if recent.2 %}
-            <div class="articles-recent__item">
-            <a href="{% url 'blog:article-detail' recent.2.slug %}">
-                <div class="articles-recent__img" style="background-image: url('media/{{ recent.2.img }}');">
-                    <div class="articles__img-filter-light"></div>
-
-                </div>
-                <div class="articles-recent__text">
-                    <div class="articles__title">{{ recent.2.title }}</div>
-                </div>
-            </a>
-            </div>
-            {% endif %}
-            {% if recent.3 %}
-            <div class="articles-recent__item">
-            <a href="{% url 'blog:article-detail' recent.3.slug %}">
-                <div class="articles-recent__img" style="background-image: url('media/{{ recent.3.img }}');">
-                    <div class="articles__img-filter-light"></div>
-
-                </div>
-                <div class="articles-recent__text">
-                    <div class="articles__title">{{ recent.3.title }}</div>
-                </div>
-            </a>
-            </div>
-            {% endif %}
-        </div>
+        </a>
     </div>
     <div class="about">
         <div class="about__title">
