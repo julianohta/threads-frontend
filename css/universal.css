@@ -198,6 +198,15 @@ header {
     font-family: Raleway;
     text-align: center; }
 
+.error {
+  margin-top: 500px;
+  margin-bottom: 500px; }
+  .error__text {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+    font-family: Raleway; }
+
 .about {
   padding-left: 12px;
   padding-right: 12px; }
