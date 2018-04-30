@@ -25,4 +25,23 @@ img {
     content: ' ';
     display: block; }
 
+@media (max-width: 760px) {
+  .photo {
+    width: 100%;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .photo__col {
+      float: right;
+      width: 33.3333%;
+      overflow: hidden;
+      height: auto;
+      padding: 4px;
+      padding-top: 0;
+      padding-bottom: 0; }
+    .photo__container {
+      width: 100%;
+      display: block;
+      padding-bottom: 8px; } }
+
 /*# sourceMappingURL=photo.css.map */
